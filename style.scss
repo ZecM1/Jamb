@@ -1,0 +1,205 @@
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/variables';
+@import 'abstracts/mixins';
+// @include text - mixin za formatiranje texta
+
+@include blueSimple;
+@include greenSimple;
+@include redSimple;
+@include purpleSimple;
+@include blueTex;
+@include greenTex;
+@include redTex;
+@include purpleTex;
+
+.activePlayer {
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+//$name, $right, $bottom, $left, $rotate, $duration
+.rollOne {
+  @include diceAnimation(ime1, 0, 30vh, 31vw, -90deg, 1s);
+}
+.rollTwo {
+  @include diceAnimation(ime2, 0, 20vh, 32vw, -120deg, 0.6s);
+}
+.rollThree {
+  @include diceAnimation(ime3, 0, 25vh, 32vw, -50deg, 0.8s);
+}
+.rollFour {
+  @include diceAnimation(ime4, 0, 37vh, 22vw, -130deg, 1.3s);
+}
+.rollFive {
+  @include diceAnimation(ime5, 0, 32vh, 22vw, -50deg, 1.2s);
+}
+
+.save1 {
+  transform: translate(-14vh, -20vh);
+}
+.save2 {
+  transform: translate(-15vh, -30vh);
+}
+.save3 {
+  transform: translate(-14vh, -25vh);
+}
+.save4 {
+  transform: translate(8vh, -13vh);
+}
+.save5 {
+  transform: translate(9vh, -18vh);
+}
+
+.placehold {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: none;
+}
+
+body {
+  font-family: $mainFont;
+  height: 100vh;
+  .menu {
+    //header klasa
+    width: 100%;
+    height: 7%;
+  }
+  main {
+    .flexContainer {
+      //div unutar kojeg je scoreboard
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 2vh;
+      height: 50vh;
+      width: 99%;
+
+      .scoreboard {
+        //tablica lijevo, možda i desno, ovisno o tome da li će biti potrebno raditi odvojeno novu
+        @include spacings(1rem, 1rem);
+        @include text;
+        @include border;
+
+        z-index: 1;
+        width: 55vh;
+        height: 70vh;
+        thead {
+          tr {
+            th {
+              font-size: 1.1rem;
+            }
+          }
+        }
+        tbody {
+          td {
+            font-size: 1.1rem;
+          }
+          // .even:nth-of-type(even) {
+          //   background: $blueCellA;
+          // }
+          // .even:nth-of-type(odd) {
+          //   background: $blueCellB;
+          // }
+          // .odd:nth-of-type(even) {
+          //   background: $blueCellB;
+          // }
+          // .odd:nth-of-type(odd) {
+          //   background: $blueCellA;
+          // }
+          tr {
+            .spacer {
+              height: 5px;
+            }
+          }
+        }
+        tfoot {
+          .scoreRow {
+            .score {
+              border-radius: 30px;
+              box-shadow: 2px 2px 0 #33333320, -1px -1px 0 #33333320,
+                1px -1px 0 #33333320, -1px 1px 0 #33333320, 1px 1px 0 #33333320;
+            }
+            // .score:nth-of-type(even) {
+            //   background: $blueEl;
+            // }
+            // .score:nth-of-type(odd) {
+            //   background: $blueElInv;
+            // }
+          }
+        }
+      }
+    }
+    div {
+      display: flex;
+      // flex-direction: column;
+      justify-content: center;
+
+      .glass {
+        position: relative;
+        display: flex;
+        height: 200px;
+        margin: auto;
+        bottom: 10vh;
+        right: 15vw;
+        // opacity: 0;
+      }
+      .buttonDiv {
+        position: relative;
+        text-align: center;
+        top: 15vh;
+        right: 45vw;
+
+        .btnEl {
+          background: transparent;
+          // border: none;
+          position: relative;
+          bottom: 50px;
+          height: 90px;
+          border-radius: 70px;
+          border-width: 5px;
+          margin: auto;
+        }
+        .buttonImg {
+          position: relative;
+          display: flex;
+          width: 270px;
+          height: 85px;
+          margin: auto;
+        }
+        .buttonText {
+          position: relative;
+          @include text;
+          bottom: 60px;
+          font-size: 1.3rem;
+        }
+      }
+      .dice {
+        display: flex;
+        height: 9vh;
+        position: relative;
+        .one {
+          position: inherit;
+          left: 35vw;
+        }
+        .two {
+          position: inherit;
+          left: 31vw;
+        }
+        .three {
+          position: inherit;
+          left: 27vw;
+        }
+        .four {
+          position: inherit;
+          left: 23vw;
+        }
+        .five {
+          position: inherit;
+          left: 19vw;
+        }
+      }
+    }
+  }
+}

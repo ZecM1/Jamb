@@ -1,0 +1,323 @@
+@mixin spacings($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin text() {
+  // -webkit-text-stroke: 2px black; -stroke ne radi kako treba sa ovim fontom tako da koristim text-shadow
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@mixin border {
+  border: solid white 1px;
+  border-radius: 20px;
+}
+
+@mixin diceAnimation($name, $right, $bottom, $left, $rotate, $duration) {
+  animation: #{$name} $duration 1s forwards ease-out;
+
+  @keyframes #{$name} {
+    0% {
+      bottom: 0;
+      transform: rotate($rotate);
+    }
+    100% {
+      right: $right;
+      bottom: $bottom;
+      left: $left;
+      transform: 0;
+    }
+  }
+}
+
+@mixin greenSimple {
+  .greenSimple {
+    background: ($greenSimple);
+
+    .menu {
+      background: $greenEl;
+    }
+    .scoreboard {
+      background: $greenEl;
+    }
+    .even:nth-of-type(even) {
+      background: $greenCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $greenCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $greenCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $greenCellA;
+    }
+    .spacer {
+      background: $greenEl;
+    }
+    .score {
+      border: 1px $greenCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $greenEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $greenElInv;
+    }
+  }
+}
+@mixin blueSimple {
+  .blueSimple {
+    background: ($blueSimple);
+
+    .menu {
+      background: $blueEl;
+    }
+    .scoreboard {
+      background: $blueEl;
+    }
+    .even:nth-of-type(even) {
+      background: $blueCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $blueCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $blueCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $blueCellA;
+    }
+    .spacer {
+      background: $blueEl;
+    }
+    .score {
+      border: 1px $blueCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $blueEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $blueElInv;
+    }
+  }
+}
+@mixin redSimple {
+  .redSimple {
+    background: ($redSimple);
+
+    .menu {
+      background: $redEl;
+    }
+    .scoreboard {
+      background: $redEl;
+    }
+    .even:nth-of-type(even) {
+      background: $redCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $redCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $redCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $redCellA;
+    }
+    .spacer {
+      background: $redEl;
+    }
+    .score {
+      border: 1px $redCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $redEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $redElInv;
+    }
+  }
+}
+@mixin purpleSimple {
+  .purpleSimple {
+    background: ($purpleSimple);
+
+    .menu {
+      background: $purpleEl;
+    }
+    .scoreboard {
+      background: $purpleEl;
+    }
+    .even:nth-of-type(even) {
+      background: $purpleCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $purpleCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $purpleCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $purpleCellA;
+    }
+    .spacer {
+      background: $purpleEl;
+    }
+    .score {
+      border: 1px $purpleCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $purpleEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $purpleElInv;
+    }
+  }
+}
+@mixin greenTex {
+  .greenTex {
+    background: ($greenTex);
+
+    .menu {
+      background: $greenEl;
+    }
+    .scoreboard {
+      background: $greenEl;
+    }
+    .even:nth-of-type(even) {
+      background: $greenCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $greenCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $greenCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $greenCellA;
+    }
+    .spacer {
+      background: $greenEl;
+    }
+    .score {
+      border: 1px $greenCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $greenEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $greenElInv;
+    }
+  }
+}
+@mixin blueTex {
+  .blueTex {
+    background: ($blueTex);
+
+    .menu {
+      background: $blueEl;
+    }
+    .scoreboard {
+      background: $blueEl;
+    }
+    .even:nth-of-type(even) {
+      background: $blueCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $blueCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $blueCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $blueCellA;
+    }
+    .spacer {
+      background: $blueEl;
+    }
+    .score {
+      border: 1px $blueCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $blueEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $blueElInv;
+    }
+  }
+}
+@mixin redTex {
+  .redTex {
+    background: ($redTex);
+
+    .menu {
+      background: $redEl;
+    }
+    .scoreboard {
+      background: $redEl;
+    }
+    .even:nth-of-type(even) {
+      background: $redCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $redCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $redCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $redCellA;
+    }
+    .spacer {
+      background: $redEl;
+    }
+    .score {
+      border: 1px $redCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $redEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $redElInv;
+    }
+  }
+}
+@mixin purpleTex {
+  .purpleTex {
+    background: ($purpleTex);
+
+    .menu {
+      background: $purpleEl;
+    }
+    .scoreboard {
+      background: $purpleEl;
+    }
+    .even:nth-of-type(even) {
+      background: $purpleCellA;
+    }
+    .even:nth-of-type(odd) {
+      background: $purpleCellB;
+    }
+    .odd:nth-of-type(even) {
+      background: $purpleCellB;
+    }
+    .odd:nth-of-type(odd) {
+      background: $purpleCellA;
+    }
+    .spacer {
+      background: $purpleEl;
+    }
+    .score {
+      border: 1px $purpleCellB solid;
+    }
+    .score:nth-of-type(even) {
+      background: $purpleEl;
+    }
+    .score:nth-of-type(odd) {
+      background: $purpleElInv;
+    }
+  }
+}

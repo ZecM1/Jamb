@@ -1,0 +1,29 @@
+//boje elemenata
+$greenEl: linear-gradient(#2d7d2d, #4a994a);
+$greenElInv: linear-gradient(to top, #2d7d2d, #4a994a);
+$blueEl: linear-gradient(#275768, #368493);
+$blueElInv: linear-gradient(to top, #275768, #368493);
+$redEl: linear-gradient(#6d3a39, #b45553);
+$redElInv: linear-gradient(to top, #6d3a39, #b45553);
+$purpleEl: linear-gradient(#3c2c7a, #673898);
+$purpleElInv: linear-gradient(to top, #3c2c7a, #673898);
+$blackEl: linear-gradient(#171717, #636363);
+$blackElInv: linear-gradient(#171717, #636363);
+//boje ćelija
+$greenCellA: #4a994a;
+$greenCellB: #2d7d2d;
+$blueCellA: #398a9b;
+$blueCellB: #275768;
+$redCellA: #b45553;
+$redCellB: #6d3a39;
+$purpleCellA: #673898;
+$purpleCellB: #3c2c7a;
+//pozadine
+$greenSimple: linear-gradient(#2d7d2d 30%, #4a994a);
+$blueSimple: linear-gradient(#28474f 30%, #66bac9);
+$redSimple: linear-gradient(#4f2828 30%, #a75454);
+$purpleSimple: linear-gradient(#3c2c7a 30%, #673898);
+$greenTex: center / cover no-repeat url(./images/backgroundGreen.png);
+$blueTex: center / cover no-repeat url(./images/backgroundBlue.png);
+$redTex: center / cover no-repeat url(./images/backgroundRed.png);
+$purpleTex: center / cover no-repeat url(./images/backgroundPurple.png);
