@@ -1,4 +1,4 @@
-# JAVASCRIPT Project - Jamb
+# JAVASCRIPT Project - Jamb - 4 Player Game
 
 ## NOTE
 
