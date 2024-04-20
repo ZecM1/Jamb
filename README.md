@@ -16,8 +16,8 @@ The development of Jamb required careful consideration of game logic to ensure t
 ### JavaScript for Game Logic and Interaction: 
 Implements complex game logic, including dice rolls, placeholder inputs, player turn changes and score calculations showcasing a deep understanding of JavaScript.
 
-### CSS animations: 
-Utilizes CSS for creating smooth and visually appealing animations, enhancing the user experience and making the game more engaging.
+### SCSS animations and styling: 
+Utilizes SCSS for creating smooth and visually appealing animations and styling, enhancing the user experience and making the game more engaging.
 
 ### Game Logic Development: 
 The project served as a learning platform for understanding JavaScript better, with the game logic being a significant challenge that helped in deepening the understanding of the language.
