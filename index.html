@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAMB!</title>
+    <meta
+      name="description"
+      content="The game of Jamb!, a practice task of a newbie programmer."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/icon.ico" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="blueTex">
+    <header class="menu"></header>
+    <main>
+      <!-- Javascript ovisno o odabiru broja igrača dodaje dodatne elemente i smanjuje colspan .player1 za 1 -->
+      <div class="flexContainer">
+        <table class="scoreboard">
+          <thead>
+            <tr>
+              <th>&nbsp</th>
+              <th>Player 1</th>
+              <th>Player 2</th>
+              <th>Player 3</th>
+              <th>Player 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="image"><img src="images/table_assets/d1.png" height="20px" width="20px" alt="1"> </td>
+              <td class="even col1 row1"></td>
+              <td class="even col2 row1"></td>
+              <td class="even col3 row1"></td>
+              <td class="even col4 row1"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/d2.png" height="20px" width="20px" alt="1"></td>
+              <td class="odd col1 row2"></td>
+              <td class="odd col2 row2"></td>
+              <td class="odd col3 row2"></td>
+              <td class="odd col4 row2"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/d3.png" height="20px" width="20px" alt="1"></td>
+              <td class="even col1 row3"></td>
+              <td class="even col2 row3"></td>
+              <td class="even col3 row3"></td>
+              <td class="even col4 row3"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/d4.png" height="20px" width="20px" alt="1"></td>
+              <td class="odd col1 row4"></td>
+              <td class="odd col2 row4"></td>
+              <td class="odd col3 row4"></td>
+              <td class="odd col4 row4"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/d5.png" height="20px" width="20px" alt="1"></td>
+              <td class="even col1 row5"></td>
+              <td class="even col2 row5"></td>
+              <td class="even col3 row5"></td>
+              <td class="even col4 row5"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/d6.png" height="20px" width="20px" alt="1"></td>
+              <td class="odd col1 row6"></td>
+              <td class="odd col2 row6"></td>
+              <td class="odd col3 row6"></td>
+              <td class="odd col4 row6"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/bonus.png" height="20px" width="45px" alt="1"></td>
+              <td class="even col1 row7"></td>
+              <td class="even col2 row7"></td>
+              <td class="even col3 row7"></td>
+              <td class="even col4 row7"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="5" class="spacer"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/tris.png" height="22px" width="35px" alt="1"></td>
+              <td class="even col1 row9"></td>
+              <td class="even col2 row9"></td>
+              <td class="even col3 row9"></td>
+              <td class="even col4 row9"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/poker.png" height="20px" width="35px" alt="1"></td>
+              <td class="odd col1 row10"></td>
+              <td class="odd col2 row10"></td>
+              <td class="odd col3 row10"></td>
+              <td class="odd col4 row10"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/full.png" height="20px" width="35px" alt="1"></td>
+              <td class="even col1 row11"></td>
+              <td class="even col2 row11"></td>
+              <td class="even col3 row11"></td>
+              <td class="even col4 row11"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/mskala.png" height="20px" width="45px" alt="1"></td>
+              <td class="odd col1 row12"></td>
+              <td class="odd col2 row12"></td>
+              <td class="odd col3 row12"></td>
+              <td class="odd col4 row12"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/skala.png" height="20px" width="45px" alt="1"></td>
+              <td class="even col1 row13"></td>
+              <td class="even col2 row13"></td>
+              <td class="even col3 row13"></td>
+              <td class="even col4 row13"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/jamb.png" height="20px" width="35px" alt="1"></td>
+              <td class="odd col1 row14"></td>
+              <td class="odd col2 row14"></td>
+              <td class="odd col3 row14"></td>
+              <td class="odd col4 row14"></td>
+            </tr>
+            <tr>
+              <td class="image"><img src="images/table_assets/plus.svg" height="15px" width="15px" alt="1"></td>
+              <td class="even col1 row15"></td>
+              <td class="even col2 row15"></td>
+              <td class="even col3 row15"></td>
+              <td class="even col4 row15"></td>
+            </tr>
+            <tfoot>
+              <tr></tr>
+              <tr></tr>
+            <tr class="scoreRow">
+              <td >total</td>
+              <td class="score "></td>
+              <td class="score "></td>
+              <td class="score "></td>
+              <td class="score "></td>
+            </tr>
+          </tfoot>
+          </tbody>
+        </table>
+      </div>
+      <!-- div sa čašom i roll tipkom -->
+      <div>
+        <div class="dice">
+          <img class="one die" src="images/1.png" alt="Kocka sa brojem 1">
+          <img class="two die" src="images/2.png" alt="Kocka sa brojem 2">
+          <img class="three die" src="images/3.png" alt="Kocka sa brojem 3">
+          <img class="four die" src="images/4.png" alt="Kocka sa brojem 4">
+          <img class="five die" src="images/5.png" alt="Kocka sa brojem 5">
+         </div>
+        <img src="images/casa.png" alt="Casa za roll" class="glass">
+        <div class="buttonDiv">
+          <button class="btnEl" onclick="">
+          <img src="images/button.png" class="buttonImg" alt="">
+          <p class="buttonText">Roll: 3/3</p></button>
+        </div>
+      </div>
+
+    </main>
+    <footer></footer>
+  </body>
+</html>
